@@ -1,0 +1,62 @@
+<div id="layout" class="theme-cyan">
+  <!-- Navbar -->
+  <div class="navigation navbar justify-content-center py-xl-4 py-md-3 py-0 px-3">
+  <app-nav-bar></app-nav-bar>
+  </div>
+  <!-- End Navbar -->
+
+  <!-- Sidebar -->
+  <div class="sidebar border-end py-xl-4 py-3 px-xl-4 px-3">    
+          <app-side-bar></app-side-bar>
+  </div>
+  <!-- End Sidebar -->
+
+  <!-- Rightbar icon menu -->
+  <div class="rightbar d-none d-md-block">
+
+  </div>
+  <!-- End Rightbar icon menu -->
+
+  <!-- Main Body: Content -->
+  <div class="main px-xl-5 px-lg-4 px-3">
+
+      <!-- Chat: Body -->
+      <div class="chat-body">
+       
+          <!-- Chat: Header -->
+          <div class="chat-header border-bottom py-xl-4 py-md-3 py-2">
+            <app-bread-crumbs></app-bread-crumbs>
+          
+          </div>
+
+          <!-- Chat: Search -->
+          <div class="collapse" id="chat-search-div">
+          </div>
+
+          <!-- Chat: Content-->
+          <div class="chat-content">
+            <router-outlet></router-outlet>
+          </div>
+
+          <!-- Chat: Footer -->
+          <div class="chat-footer border-top py-xl-4 py-lg-2 py-2">
+             Ters footer 
+          </div>
+
+      </div>
+      <!-- End chat body -->
+
+      <!-- Chat: user details -->
+      <div class="user-detail-sidebar py-xl-4 py-3 px-xl-4 px-3">
+        Chat user details
+      </div>
+
+      <!-- Chat: add new user to create a group chat -->
+      <div class="addnew-user-sidebar py-xl-4 py-3 px-xl-4 px-3">
+        andd new user on the froup
+      </div>
+      
+  </div>
+  <!-- Main Body: Content -->
+
+</div>

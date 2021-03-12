@@ -1,0 +1,28 @@
+[
+  '{{repeat(10)}}',
+  {
+   
+    UId :'{{guid()}}',
+    FirstName :'{{firstName("female")}}',
+    lastName : '{{surname()}}',
+    EmailAddress: '{{email()}}',
+    Introduction: '{{lorem(1, "paragraphs")}}',
+    Username : '{{email()}}',
+    Password: 'Password',
+    DateOfBirth: '{{date(new Date(1950,0,1), new Date(1999, 11, 31), "YYYY-MM-dd")}}',
+    DateCreated: function(){return this.Created; },
+    LastActive: function(){return this.Created; },
+ GenderId : 1
+    Photos: [
+        {
+          url: function(num) {
+          return 'https://randomuser.me/api/portraits/women/' + num.integer(1,99) + '.jpg';
+        },
+        isMain: true,
+        description: '{{lorem()}}'
+      }
+    ]
+
+    
+  }
+]

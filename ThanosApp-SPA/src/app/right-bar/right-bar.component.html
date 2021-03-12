@@ -1,0 +1,397 @@
+<div class="sidebar border-end py-xl-4 py-3 px-xl-4 px-3">
+  <div class="tab-content">
+
+      <!-- Menu: User detail -->
+      <div class="tab-pane fade show active" id="nav-tab-user" role="tabpanel">
+          <!-- Tab heading -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="mb-0 text-primary">Profile</h4>
+              <div>
+                  <a href="signin.html" title="" class="btn btn-dark">Sign Out</a>
+              </div>
+          </div>
+
+          <!-- Search input -->
+          <div class="form-group input-group-lg search mb-3">
+              <i class="zmdi zmdi-search"></i>
+              <input type="text" class="form-control" placeholder="Search...">
+          </div>
+
+          <!-- Profile avatar photo -->
+          <div class="card border-0 text-center pt-3 mb-4">
+              <div class="card-body">
+                  <div class="card-user-avatar">
+                      <img src="assets/images/user.png" alt="avatar">
+                      <button type="button" class="btn btn-secondary btn-sm"><i class="zmdi zmdi-edit"></i></button>
+                  </div>
+                  <div class="card-user-detail mt-4">
+                      <h5>Michelle Green</h5>
+                      <span class="text-muted">michelle.green@gmail.com</span>
+                      <p>+14 123 456 789 - New york (USA)</p>
+                      <div class="social">
+                          <a class="icon p-2" href="#" data-bs-toggle="tooltip" title="Facebook"><i class="zmdi zmdi-facebook-box"></i></a>
+                          <a class="icon p-2" href="#" data-bs-toggle="tooltip" title="Github"><i class="zmdi zmdi-github-box"></i></a>
+                          <a class="icon p-2" href="#" data-bs-toggle="tooltip" title="Linkedin"><i class="zmdi zmdi-linkedin-box"></i></a>
+                          <a class="icon p-2" href="#" data-bs-toggle="tooltip" title="Instagram"><i class="zmdi zmdi-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- User Settings -->
+          <div class="card border-0">
+              <ul class="list-group custom list-group-flush">
+
+                  <!-- Theme color Settings -->
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Color Scheme</span>
+                      <ul class="choose-skin list-unstyled mb-0">
+                          <li data-theme="indigo" data-bs-toggle="tooltip" title="Theme-Indigo"><div class="indigo"></div></li>
+                          <li class="active" data-theme="cyan" data-bs-toggle="tooltip" title="Theme-Cyan"><div class="cyan"></div></li>
+                          <li data-theme="green" data-bs-toggle="tooltip" title="Theme-Green"><div class="green"></div></li>
+                          <li data-theme="blush" data-bs-toggle="tooltip" title="Theme-Blush"><div class="blush"></div></li>
+                          <li data-theme="dark" data-bs-toggle="tooltip" title="Theme-Dark"><div class="dark"></div></li>
+                      </ul>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Desktop notifications</span>
+                      <label class="c_checkbox">
+                          <input type="checkbox" checked="">
+                          <span class="checkmark"></span>
+                      </label>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Sound notifications</span>
+                      <label class="c_checkbox">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+                  </li>
+                  <li class="list-group-item border-0 mt-2">
+                      <a class="link" href="#"><i class="zmdi zmdi-chevron-right me-2"></i> Need Help? Let's chat</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                      <a class="link" href="#"><i class="zmdi zmdi-chevron-right me-2"></i> english (United States)</a>
+                  </li>
+              </ul>
+
+              <!-- update Settings btn -->
+              <div class="card-body text-center border-top">
+                  <button type="button" class="btn btn-secondary">Update Profile</button>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Menu: List -->
+      <div class="tab-pane fade" id="nav-tab-menu" role="tabpanel">
+          <!-- Menu: heading -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="mb-0 text-primary">Events</h4>
+              <div>
+                  <button class="btn btn-dark" type="button">Create New</button>
+              </div>
+          </div>
+
+          <!-- Menu: Search -->
+          <div class="form-group input-group-lg search mb-3">
+              <i class="zmdi zmdi-search"></i>
+              <input type="text" class="form-control" placeholder="Search...">
+          </div>
+
+          <!-- Menu: List -->
+          <div class="card mb-1">
+              <div class="card-body">
+                  <ul class="menu-list p-0 m-0">
+                      <li class="header text-uppercase">Events App</li>
+                      <li class="active open"><a href="index.html" class="py-2"><i class="zmdi zmdi-home me-3"></i><span>Dashboard</span></a></li>
+                      <li>
+                          <a href="javascript:void(0);" class="py-2 menu-toggle"><i class="zmdi zmdi-calendar-check me-3"></i><span>Events</span></a>
+                          <ul class="ml-menu border-start ps-2 ms-2">
+                              <li><a href="event-all.html">All Events</a></li>
+                              <li><a href="event-draft.html">Draft Events</a></li>
+                              <li><a href="event-my.html">My Events</a></li>
+                              <li><a href="event-calendar.html">Calendar</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="event-members.html" class="py-2"><i class="zmdi zmdi-accounts-alt me-3"></i><span>Members</span></a></li>
+                      <li><a href="event-message.html" class="py-2"><i class="zmdi zmdi-email me-3"></i><span>Message</span></a></li>
+                      <li><a href="index-chat.html" class="py-2"><i class="zmdi zmdi-comment-more me-3"></i><span>Chat App</span></a></li>
+                      <li class="header text-uppercase mt-3">UPCOMING EVENTS</li>
+                      <li><a href="#" class="py-2"><i class="zmdi zmdi-star-outline me-3"></i><span class="text-truncate">Byron Bay Bluesfest</span></a></li>
+                      <li><a href="#" class="py-2"><i class="zmdi zmdi-star-outline me-3"></i><span class="text-truncate">DC Environmental Film Festival</span></a></li>
+                      <li><a href="#" class="py-2"><i class="zmdi zmdi-star-outline me-3"></i><span class="text-truncate">Vancouver Fashion Week</span></a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- Menu: PEOPLE -->
+          <ul class="chat-list mt-3">
+              <li class="header d-flex justify-content-between ps-3 pe-3 mb-1">
+                  <span>event speaker</span>
+                  <div class="dropdown">
+                      <a class="btn btn-link px-1 py-0 border-0 text-muted dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="zmdi zmdi-plus-circle"></i></a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <a class="dropdown-item" href="#">Add New</a>
+                          <a class="dropdown-item" href="#">Create Group</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="online">
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media align-items-center">
+                              <div class="avatar sm me-3">
+                                  <span class="status rounded-circle"></span>
+                                  <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" alt="avatar">
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <h6 class="text-truncate mb-0 me-auto">Jason Porter</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="away">
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media align-items-center">
+                              <div class="avatar sm me-3">
+                                  <span class="status rounded-circle"></span>
+                                  <img class="avatar sm rounded-circle" src="assets/images/xs/avatar1.jpg" alt="avatar">
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <h6 class="text-truncate mb-0 me-auto">Michelle Green</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media">
+                              <div class="avatar sm me-3">
+                                  <div class="avatar sm rounded-circle no-image timber">
+                                      <span>UD</span>
+                                  </div>
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <div class="d-flex align-items-center mb-1">
+                                      <h6 class="text-truncate mb-0 me-auto">UI-Design Group</h6>
+                                  </div>
+                                  <div class="text-truncate">
+                                      <i class="zmdi zmdi-file-text me-1"></i> North Carolina, CT
+                                      <div class="avatar-list avatar-list-stacked mt-1">
+                                          <img class="avatar xs rounded" src="assets/images/xs/avatar5.jpg" alt="" data-bs-toggle="tooltip" data-placement="top" title="Avatar" data-original-title="Sean">
+                                          <img class="avatar xs rounded" src="assets/images/xs/avatar6.jpg" alt="" data-bs-toggle="tooltip" data-placement="top" title="Avatar" data-original-title="Martin">
+                                          <img class="avatar xs rounded" src="assets/images/xs/avatar1.jpg" alt="" data-bs-toggle="tooltip" data-placement="top" title="Avatar" data-original-title="Terry">
+                                          <img class="avatar xs rounded" src="assets/images/xs/avatar4.jpg" alt="" data-bs-toggle="tooltip" data-placement="top" title="Avatar" data-original-title="Michelle">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+          </ul>
+          
+      </div>
+
+      <!-- Menu: notifications -->
+      <div class="tab-pane fade" id="nav-tab-notifications" role="tabpanel">
+          <!-- Menu: heading -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="mb-0 text-primary">Notifications</h4>
+              <div>
+                  
+              </div>
+          </div>
+
+          <!-- Menu: Search input -->
+          <div class="form-group input-group-lg search mb-3">
+              <i class="zmdi zmdi-search"></i>
+              <input type="text" class="form-control" placeholder="Search...">
+          </div>
+
+          <!-- Menu: list -->
+          <ul class="chat-list animation-li-delay">
+              <li class="header d-flex justify-content-between ps-3 pe-3 mb-1">
+                  <span>RECENT</span>
+                  <div class="dropdown">
+                      <a class="btn btn-link px-1 py-0 border-0 text-muted dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-filter-list"></i></a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media">
+                              <div class="avatar sm me-2">
+                                  <img class="avatar sm rounded-circle" src="assets/images/xs/avatar5.jpg" alt="avatar">
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <div class="d-flex align-items-center mb-1">
+                                      <h6 class="text-truncate mb-0 me-auto">Jason Porter</h6>
+                                      <p class="small text-muted text-nowrap ms-4 mb-0">11:08 am</p>
+                                  </div>
+                                  <div>changed an issue from "In Progress" to <span class="badge bg-success">Review</span></div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media">
+                              <div class="avatar sm me-2">
+                                  <div class="avatar sm rounded-circle no-image timber">
+                                      <span>UD</span>
+                                  </div>
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <div class="d-flex align-items-center mb-1">
+                                      <h6 class="text-truncate mb-0 me-auto">UI-Design Group</h6>
+                                      <p class="small text-muted text-nowrap ms-4 mb-0">11:08 am</p>
+                                  </div>
+                                  <div>
+                                      <i class="zmdi zmdi-file-text me-1"></i> mentioned you in a comment
+                                      <blockquote class="blockquote blockquote-sm ps-2 mt-2 mb-0">
+                                          Nice work, love! You really nailed it. Keep it up!
+                                      </blockquote>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media">
+                              <div class="avatar sm me-2">
+                                  <img class="avatar sm rounded-circle" src="assets/images/xs/avatar1.jpg" alt="avatar">
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <div class="d-flex align-items-center mb-1">
+                                      <h6 class="text-truncate mb-0 me-auto">Michelle Green</h6>
+                                      <p class="small text-muted text-nowrap ms-4 mb-0">1DY</p>
+                                  </div>
+                                  <div>
+                                      joined the Slack group HS Team
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media">
+                              <div class="avatar sm me-2">
+                                  <img class="avatar sm rounded-circle" src="assets/images/xs/avatar2.jpg" alt="avatar">
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <div class="d-flex align-items-center mb-1">
+                                      <h6 class="text-truncate mb-0 me-auto">Elizabeth Martin</h6>
+                                      <p class="small text-muted text-nowrap ms-4 mb-0">4DY</p>
+                                  </div>
+                                  <div class="text-truncate"><i class="zmdi zmdi-file-text me-1"></i> It is a long established fact that a reader w...</div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media">
+                              <div class="avatar sm me-2">
+                                  <div class="avatar sm rounded-circle no-image orange">
+                                      <span><i class="zmdi zmdi-check"></i></span>
+                                  </div>
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <div class="d-flex align-items-center mb-1">
+                                      <h6 class="text-truncate mb-0 me-auto text-warning">Issue Fixed</h6>
+                                      <p class="small text-muted text-nowrap ms-4 mb-0">5DY</p>
+                                  </div>
+                                  <div>
+                                      WE have fix all Design bug with Responsive
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="card">
+                      <div class="card-body">
+                          <div class="media">
+                              <div class="avatar sm me-2">
+                                  <div class="avatar sm rounded-circle no-image red">
+                                      <span><i class="zmdi zmdi-help zmdi-hc-lg"></i></span>
+                                  </div>
+                              </div>
+                              <div class="media-body overflow-hidden">
+                                  <div class="d-flex align-items-center mb-1">
+                                      <h6 class="text-truncate mb-0 me-auto text-danger">Server Warning </h6>
+                                      <p class="small text-muted text-nowrap ms-4 mb-0">5DY</p>
+                                  </div>
+                                  <div>
+                                      Your connection is not private
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+          </ul>
+      </div>
+
+      <!-- Menu: components -->
+      <div class="tab-pane fade" id="nav-tab-components" role="tabpanel">
+          <!-- Menu: heading -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="mb-0 text-primary">Components</h4>
+          </div>
+
+          <!-- Menu: COMPONENTS -->
+          <div class="card mb-1">
+              <div class="card-body">
+                  <ul class="menu-list p-0 m-0">
+                      <li class="header">COMPONENTS</li>
+                      <li><a class="py-2" href="ui-alerts.html"><i class="zmdi zmdi-alert-circle-o me-3"></i><span>Alerts</span></a></li>
+                      <li><a class="py-2" href="ui-badges.html"><i class="zmdi zmdi-label me-3"></i><span>Badges</span></a></li>
+                      <li><a class="py-2" href="ui-breadcrumb.html"><i class="zmdi zmdi-label me-3"></i><span>Breadcrumb</span></a></li>
+                      <li><a class="py-2" href="ui-buttons.html"><i class="zmdi zmdi-label me-3"></i><span>Buttons</span></a></li>
+                      <li><a class="py-2" href="ui-card.html"><i class="zmdi zmdi-label me-3"></i><span>Card's</span></a></li>
+                      <li><a class="py-2" href="ui-collapse.html"><i class="zmdi zmdi-label me-3"></i><span>Collapse</span></a></li>
+                      <li><a class="py-2" href="ui-colors.html"><i class="zmdi zmdi-format-color-fill me-3"></i><span>Colors</span></a></li>
+                      <li><a class="py-2" href="ui-dialogs.html"><i class="zmdi zmdi-label me-3"></i><span>Dialogs</span></a></li>
+                      <li><a class="py-2" href="ui-icons.html"><i class="zmdi zmdi-bookmark me-3"></i><span>Icons</span></a></li>
+                      <li><a class="py-2" href="ui-listgroup.html"><i class="zmdi zmdi-format-list-bulleted me-3"></i><span>List Group</span></a></li>
+                      <li><a class="py-2" href="ui-mediaobject.html"><i class="zmdi zmdi-label me-3"></i><span>Media Object</span></a></li>
+                      <li><a class="py-2" href="ui-modals.html"><i class="zmdi zmdi-label me-3"></i><span>Modals</span></a></li>
+                      <li><a class="py-2" href="ui-notifications.html"><i class="zmdi zmdi-notifications me-3"></i><span>Notifications</span></a></li>
+                      <li><a class="py-2" href="ui-progressbars.html"><i class="zmdi zmdi-circle-o me-3"></i><span>Progress Bars</span></a></li>
+                      <li><a class="py-2" href="ui-pagination.html"><i class="zmdi zmdi-format-list-numbered me-3"></i><span>Pagination</span></a></li>
+                      <li><a class="py-2" href="ui-scrollspy.html"><i class="zmdi zmdi-label me-3"></i><span>Scrollspy</span></a></li>
+                      <li><a class="py-2" href="ui-spinners.html"><i class="zmdi zmdi-spinner me-3"></i><span>Spinners</span></a></li>
+                      <li><a class="py-2" href="ui-tabs.html"><i class="zmdi zmdi-tab me-3"></i><span>Tabs</span></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>

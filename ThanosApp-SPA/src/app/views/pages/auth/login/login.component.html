@@ -1,0 +1,62 @@
+<div class="authentication">
+
+    <div class="container d-flex flex-column">
+
+        <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+
+            <div class="col-12 col-md-7 col-lg-5 col-xl-4 py-md-11">
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <!-- Heading -->
+                        <h3 class="text-center">Sign in</h3>
+
+                        <!-- Text -->
+                        <p class="text-center mb-6">Make it simple, but significant</p>
+
+                        <!-- Form -->
+                        <form #loginForm="ngForm" class="mb-4 mt-5" (ngSubmit)="login()" autocomplete="off">
+                            <!-- Email -->
+                            <div class="input-group mb-2">
+                                <input type="email" name="username" [(ngModel)]="model.username"
+                                    class="form-control form-control-lg" placeholder="Enter your username">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="input-group mb-4">
+                                <input type="password" name="password" [(ngModel)]="model.password"
+                                    class="form-control form-control-lg" placeholder="Enter your password">
+                            </div>
+
+                            <div class="form-group d-flex justify-content-between">
+                                <label class="c_checkbox">
+                                    <input type="checkbox">
+                                    <span class="ms-2 todo_name">Remember me</span>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <a class="link" routerLink="/auth/forgot-password">Forgot password ?</a>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="text-center mt-5">
+                                <button type="submit" (click)="login()" class="btn btn-lg btn-primary" title="Sign in">Sign in</button>
+                            </div>
+                        </form>
+
+                        <!-- Text -->
+                        <p class="text-center mb-0">Don't have an account yet <a class="link"
+                                routerLink="/auth/register">Sign up</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signin-img d-none d-lg-block text-center">
+                <img src="assets/images/signin-img-cyan.svg" alt="Sign In Image" />
+
+            </div>
+
+        </div> <!-- / .row -->
+
+    </div>
+
+</div>
