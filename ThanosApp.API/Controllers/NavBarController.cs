@@ -19,8 +19,8 @@ namespace ThanosApp.API.Controllers
          }
         
         [HttpGet]
-        [Route("navbar")]
-        public async Task<IActionResult> GetNavBar(){
+        [Route("menu")]
+        public async Task<ActionResult> GetNavBar(){
             var navFromRepo = await _repo.GetNavBar();
             return Ok(navFromRepo) ;
 
