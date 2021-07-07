@@ -16,7 +16,7 @@ namespace ThanosApp.API.Dtos
 
         public DateTime DateRead { get; set; }
         public bool  IsRead { get; set; }
-        
+        //
         
     }
     
